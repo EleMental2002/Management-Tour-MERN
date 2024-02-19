@@ -1,0 +1,42 @@
+/* MasonryImagesGallery.css */
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem; /* Adjust this to control the spacing between columns */
+}
+
+.masonry__item {
+  flex: 1;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  min-width: calc(33.33% - 1rem); /* Adjust this for the number of columns */
+  box-sizing: border-box;
+}
+
+.masonry__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.masonry__item:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 992px) {
+  .masonry__item {
+    min-width: calc(50% - 1rem); /* Adjust this for the number of columns */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .masonry__item {
+    min-width: 100%; /* Show one column on small screens */
+  }
+}

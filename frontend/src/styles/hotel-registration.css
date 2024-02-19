@@ -1,0 +1,32 @@
+/* hotel-registration.css */
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 6px; /* Adjusted padding to make it smaller */
+  margin-bottom: 8px; /* Adjusted margin for spacing */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #e12e1a; /* Same green background color as before */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #b71616; /* Same darker green on hover as before */
+}

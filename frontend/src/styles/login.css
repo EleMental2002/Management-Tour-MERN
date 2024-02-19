@@ -1,0 +1,113 @@
+.login__img {
+  width: 60%;
+  text-align: center;
+}
+
+.login__img img {
+  width: 100%; /* Adjusted image width to fit the container */
+  max-width: 100%; /* Added max-width to ensure image doesn't exceed its original size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.login__form {
+  padding: 30px; /* Reduced padding for a smaller form */
+  background: var(--secondary-color);
+  position: relative;
+}
+
+.login__container {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin-top: 50px; /* Reduced margin-top for a smaller container */
+}
+
+.login__form .user {
+  width: 60px; /* Reduced user icon size */
+  height: 60px; /* Reduced user icon size */
+  position: absolute;
+  top: -8%; /* Slightly adjusted vertical position */
+  left: 50%;
+  transform: translateX(-50%); /* Simplified horizontal centering */
+}
+
+.login__form .user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Use "cover" to maintain image aspect ratio and fill the container */
+}
+
+.login__form h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem; /* Reduced margin at the bottom */
+}
+
+.login__form {
+  width: 80%; /* Increased form width for better visibility */
+  max-width: 400px; /* Added max-width to prevent excessive width on larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.login__form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  color: var(--heading-color);
+  margin-bottom: 1rem; /* Added margin-bottom for spacing between inputs */
+}
+
+.login__form input:focus {
+  outline: none;
+}
+
+.auth__btn {
+  background: var(--heading-color) !important;
+  width: 100%;
+  padding: 0.5rem; /* Adjusted button padding for better appearance */
+  color: #fff !important;
+  border: none; /* Removed button border */
+  cursor: pointer;
+}
+
+.login__form p {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 1rem; /* Adjusted margin-top for spacing */
+  text-align: center;
+}
+
+.login__form p a {
+  color: var(--heading-color);
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .login__img {
+    display: none;
+  }
+
+  .login__form {
+    width: 90%; /* Increased form width on smaller screens */
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .login__container {
+    padding-bottom: 2rem; /* Adjusted padding for smaller screens */
+    margin-top: 30px; /* Reduced margin-top for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .login__form {
+    width: 100%;
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .login__container {
+    padding-bottom: 0.5rem; /* Further reduced padding for smaller screens */
+  }
+}

@@ -1,0 +1,170 @@
+.colchange {
+  display: flex;
+  justify-content: center;
+}
+
+.search__bar {
+  background: #fff;
+  border-radius: 150px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin-top: -10px; /* Adjust the margin-top value to push it up */
+}
+
+.form__group span {
+  font-size: 1.8rem;
+  color: #ee6e6e;
+}
+
+.form__group input {
+  border: none;
+  font-size: 0.9rem;
+  color: var(--heading-color);
+}
+
+.form__group input:focus {
+  outline: none;
+}
+
+.form__group h6 {
+  margin-bottom: 0;
+}
+
+.form__group-fast {
+  border-right: 2px solid #ddd;
+}
+
+/* Existing styles for larger screens */
+
+.search__icon i {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  background: var(--secondary-color);
+  color: #fff;
+  border-radius: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .search__bar {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .search__bar form {
+    flex-wrap: wrap;
+  }
+
+  .search__bar form .form__group {
+    width: 48%;
+  }
+}
+
+.colchange {
+  display: flex;
+  justify-content: center;
+}
+
+.search__bar {
+  background: #fff;
+  border-radius: 150px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin-top: -10px; /* Adjust the margin-top value to push it up */
+}
+
+.form__group span {
+  font-size: 1.8rem;
+  color: #ee6e6e;
+}
+
+.form__group input {
+  border: none;
+  font-size: 0.9rem;
+  color: var(--heading-color);
+}
+
+.form__group input:focus {
+  outline: none;
+}
+
+.form__group h6 {
+  margin-bottom: 0;
+}
+
+.form__group-fast {
+  border-right: 2px solid #ddd;
+}
+
+/* Existing styles for larger screens */
+
+.search__icon i {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  background: var(--secondary-color);
+  color: #fff;
+  border-radius: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .search__bar {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .search__bar form {
+    flex-wrap: wrap;
+  }
+
+  .search__bar form .form__group {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .search__bar form .form__group {
+    width: 100%;
+    border-radius: 30px;
+    height: fit-content;
+  }
+
+  .form__group input {
+    font-size: 0.7rem;
+  }
+
+  .form__group span {
+    font-size: 1.1rem;
+  }
+
+  .form__group h6 {
+    font-size: 1rem;
+  }
+
+  /* New styles for smaller screens (mobile) */
+  .search__icon i {
+    width: 20rem;
+    font-size: 2rem; /* Increase the font size to make it longer */
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center vertically */
+    height: 4rem; /* Increase the height */
+    /* Increase the width */
+    border-radius: 30px; /* Remove uneven border-radius */
+    background: var(--secondary-color);
+    color: #fff;
+  }
+
+  /* Style for the "Search" text */
+  .search__icon i::after {
+    margin-top: 0.5rem; /* Adjust spacing between icon and text */
+  }
+}

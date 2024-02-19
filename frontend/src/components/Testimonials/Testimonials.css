@@ -1,0 +1,38 @@
+/* Testimonials.css */
+.slick-slide {
+  padding: 1rem; /* Adjust padding to control card size */
+  outline: none; /* Remove focus outline on slide */
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial p {
+  margin-bottom: 1rem;
+}
+
+.testimonial img {
+  width: 80px; /* Adjust image size as needed */
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonial h6 {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.testimonial p.customer-title {
+  font-size: 0.9rem;
+  color: #777;
+}
